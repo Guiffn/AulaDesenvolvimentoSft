@@ -1,0 +1,6 @@
+### Requisição para a raiz da API
+GET http://localhost:5051
+### Requisição para a segunda API
+GET http://localhost:5051/retornarendereco
+
+
