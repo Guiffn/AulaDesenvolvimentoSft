@@ -1,8 +1,26 @@
-### Requisição para a raiz da API
+###Requisição para a raiz da API
 GET http://localhost:5051
 
-### 
-GET http://localhost:5051/produto/listar
+### Listar Produtos 
+GET http://localhost:5051/produto/listar 
+Accept: application/json
 
+### Buscar Produtos
+GET http://localhost:5051/produto/buscar/Calça
+### Cadastrar Produtos
+POST http://localhost:5051/produto/cadastrar 
+Content-Type: application/json
 
+{
+  "Nome": "Novo Produto",
+  "Preco": 99.90,
+  "Quantidade": 5
+}
+### Altera Produto 
+PUT http://localhost:5051/produto/altera/Camiseta%20Polo
+Content-Type: application/json
 
+{
+  "Preco": 55.90,
+  "Quantidade": 7
+}
